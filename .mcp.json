@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "playwright": {
-      "command": "npx",
-      "args": ["@playwright/mcp@latest"]
+    "blockbench": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "mcp-remote", "http://localhost:3000/bb-mcp"]
     }
   }
 }
