@@ -145,9 +145,19 @@ data pack rather than folding its internals into this one.
 
 ## Notes / known limitations
 
-- `pack.png`, `raw_duck.png`, and `cooked_duck.png` textures included here
-  are functional placeholders (flat pixel-art) — swap them for final art
-  before release.
+- **Art status:** Duck Egg and Duck Spawn Egg use their original custom
+  textures/models. Raw Duck and Cooked Duck don't have dedicated art yet —
+  as a placeholder, their item models (`assets/mobvarientsaio/models/item/raw_duck.json`
+  / `cooked_duck.json`) just point straight at the vanilla
+  `minecraft:item/chicken` / `minecraft:item/cooked_chicken` textures, so
+  in-game they render (and are named) as Raw Duck / Cooked Duck but look
+  identical to plain raw/cooked chicken until real duck-specific art is
+  drawn and dropped in at
+  `assets/mobvarientsaio/textures/item/raw_duck.png` /
+  `cooked_duck.png` (then repoint the two model files' `layer0` at
+  `mobvarientsaio:item/raw_duck` / `mobvarientsaio:item/cooked_duck`).
+- `pack.png` is a simple placeholder icon, not final branding — swap it
+  for real art before release.
 - The furnace/smoker/campfire recipes rely on component-aware ingredient
   matching (matching `minecraft:chicken` items by their
   `minecraft:item_model`). If a specific 26.x build you're targeting (26.0
