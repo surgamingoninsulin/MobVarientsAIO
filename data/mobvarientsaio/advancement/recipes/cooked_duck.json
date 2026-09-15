@@ -8,9 +8,7 @@
           {
             "items": ["minecraft:chicken"],
             "components": {
-              "minecraft:custom_model_data": {
-                "strings": ["raw_duck"]
-              }
+              "minecraft:item_model": "mobvarientsaio:item/raw_duck"
             }
           }
         ]

@@ -61,9 +61,7 @@
                 {
                   "function": "minecraft:set_components",
                   "components": {
-                    "minecraft:custom_model_data": {
-                      "strings": ["cooked_duck"]
-                    },
+                    "minecraft:item_model": "mobvarientsaio:item/cooked_duck",
                     "minecraft:item_name": {
                       "type": "translatable",
                       "translate": "item.mobvarientsaio.cooked_duck",
@@ -91,9 +89,7 @@
                 {
                   "function": "minecraft:set_components",
                   "components": {
-                    "minecraft:custom_model_data": {
-                      "strings": ["raw_duck"]
-                    },
+                    "minecraft:item_model": "mobvarientsaio:item/raw_duck",
                     "minecraft:item_name": {
                       "type": "translatable",
                       "translate": "item.mobvarientsaio.raw_duck",

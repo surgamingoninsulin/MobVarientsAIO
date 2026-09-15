@@ -1,1 +1,1 @@
-give @s minecraft:egg[minecraft:chicken/variant="mobvarientsaio:duck", minecraft:custom_model_data={strings:["duck_egg"]}, minecraft:item_name={type:"translatable",translate:"item.mobvarientsaio.duck_egg",fallback:"Duck Egg"}]
+give @s minecraft:egg[minecraft:chicken/variant="mobvarientsaio:duck", minecraft:item_model="mobvarientsaio:item/duck_egg", minecraft:item_name={type:"translatable",translate:"item.mobvarientsaio.duck_egg",fallback:"Duck Egg"}]

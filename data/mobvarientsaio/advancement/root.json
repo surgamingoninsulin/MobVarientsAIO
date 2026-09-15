@@ -20,7 +20,7 @@
     "icon": {
       "id": "minecraft:chicken_spawn_egg",
       "components": {
-        "minecraft:custom_model_data": {"strings":["duck_spawn_egg"]}
+        "minecraft:item_model": "mobvarientsaio:item/duck_spawn_egg"
       }
     },
     "show_toast": false,
