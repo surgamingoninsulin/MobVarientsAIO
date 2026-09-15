@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/chicken_spawn_egg"
+    },
+    "cases": [
+      {
+        "when": "duck_spawn_egg",
+        "model": {
+          "type": "model",
+          "model": "mobvarientsaio:item/duck_spawn_egg"
+        }
+      }
+    ]
+  }
+}

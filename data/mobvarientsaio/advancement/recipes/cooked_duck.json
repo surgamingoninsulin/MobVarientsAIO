@@ -1,0 +1,30 @@
+{
+  "parent": "mobvarientsaio:duck_variant",
+  "criteria": {
+    "has_raw_duck": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:chicken"],
+            "components": {
+              "minecraft:custom_model_data": {
+                "strings": ["raw_duck"]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["has_raw_duck"]
+  ],
+  "rewards": {
+    "recipes": [
+      "mobvarientsaio:cooked_duck_smelting",
+      "mobvarientsaio:cooked_duck_smoking",
+      "mobvarientsaio:cooked_duck_campfire"
+    ]
+  }
+}

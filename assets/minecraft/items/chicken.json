@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/chicken"
+    },
+    "cases": [
+      {
+        "when": "raw_duck",
+        "model": {
+          "type": "model",
+          "model": "mobvarientsaio:item/raw_duck"
+        }
+      }
+    ]
+  }
+}

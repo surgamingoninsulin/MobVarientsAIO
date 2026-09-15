@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "condition": {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "minecraft:components": {
+                "minecraft:chicken/variant": "mobvarientsaio:duck"
+              }
+            }
+          },
+          "modifier": [
+            {
+              "type": "set_components",
+              "components": {
+                "minecraft:chicken/variant": "mobvarientsaio:duck",
+                "minecraft:custom_model_data": {"strings":["duck_egg"]},
+                "minecraft:item_name": {
+                  "type": "translatable",
+                  "translate": "item.mobvarientsaio.duck_egg",
+                  "fallback": "Duck Egg"
+                }
+              }
+            }
+          ],
+          "name": "minecraft:egg"  
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

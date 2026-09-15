@@ -1,0 +1,17 @@
+{
+  "pack": {
+    "description": [
+      "",
+      {
+        "text": "MobVarientsAIO v1.0.0 (MC 26.2+)",
+        "color": "green"
+      },
+      {
+        "text": " by SurGamingOnInsulin",
+        "color": "gray"
+      }
+    ],
+    "min_format": [88, 1],
+    "max_format": [107, 1]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "mobvarientsaio:root",
+  "criteria": {
+    "load": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": [
+      {
+        "text": "Ducks as chicken variants, dropping Raw Duck (cookable into Cooked Duck)!",
+        "color": "green"
+      }
+    ],
+    "icon": {
+      "id": "minecraft:chicken_spawn_egg",
+      "components": {
+        "minecraft:custom_model_data": {"strings":["duck_spawn_egg"]}
+      }
+    },
+    "show_toast": false,
+    "title": "Duck Variant"
+  },
+  "requirements": [
+    [
+      "load"
+    ]
+  ]
+}
