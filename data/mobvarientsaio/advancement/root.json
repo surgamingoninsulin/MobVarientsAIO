@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "load": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:block/grass_block",
+    "description": [
+      {
+        "text": "MobVarientsAIO by SurGamingOnInsulin\n",
+        "color": "green"
+      },
+      {
+        "text": "Adds new mob variants (ducks, and more to come) to vanilla Minecraft.",
+        "color": "gray"
+      }
+    ],
+    "icon": {
+      "id": "minecraft:chicken_spawn_egg",
+      "components": {
+        "minecraft:item_model": "mobvarientsaio:item/duck_spawn_egg"
+      }
+    },
+    "show_toast": false,
+    "title": "MobVarientsAIO"
+  },
+  "requirements": [
+    [
+      "load"
+    ]
+  ]
+}

@@ -1,0 +1,1 @@
+give @s minecraft:chicken_spawn_egg[minecraft:chicken/variant="mobvarientsaio:duck", minecraft:item_model="mobvarientsaio:item/duck_spawn_egg", minecraft:item_name={type:"translatable",translate:"item.mobvarientsaio.duck_spawn_egg",fallback:"Duck Spawn Egg"}]

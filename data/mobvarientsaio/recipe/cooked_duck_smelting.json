@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:chicken",
+    "components": {
+      "minecraft:item_model": "mobvarientsaio:item/raw_duck"
+    }
+  },
+  "result": {
+    "id": "minecraft:cooked_chicken",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "mobvarientsaio:item/cooked_duck",
+      "minecraft:item_name": {
+        "type": "translatable",
+        "translate": "item.mobvarientsaio.cooked_duck",
+        "fallback": "Cooked Duck"
+      }
+    }
+  },
+  "experience": 0.35,
+  "cookingtime": 100
+}
