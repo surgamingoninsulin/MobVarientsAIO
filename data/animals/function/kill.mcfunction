@@ -1,0 +1,5 @@
+execute as @a at @s run kill @e[tag=elephant]
+execute as @a at @s run kill @e[tag=jellyfish]
+execute as @a at @s run kill @e[tag=shark]
+execute as @a at @s run kill @e[tag=crab]
+execute as @a at @s run kill @e[tag=ostrich]

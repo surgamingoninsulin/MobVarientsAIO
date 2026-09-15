@@ -1,0 +1,12 @@
+execute as @e[type=chicken,limit=1] at @s if biome ~ ~ ~ minecraft:savanna run function animals:elephant
+execute as @e[type=chicken,limit=1] at @s if biome ~ ~ ~ minecraft:jungle run function animals:elephant
+execute as @e[type=squid,limit=1] at @s if biome ~ ~ ~ minecraft:warm_ocean run function animals:jellyfish
+execute as @e[type=squid,limit=1] at @s if biome ~ ~ ~ minecraft:deep_lukewarm_ocean run function animals:jellyfish
+execute as @e[type=squid,limit=1] at @s if biome ~ ~ ~ minecraft:deep_ocean run function animals:jellyfish
+execute as @e[type=squid,limit=1] at @s if biome ~ ~ ~ minecraft:ocean run function animals:jellyfish
+execute as @e[type=squid,limit=1] at @s if biome ~ ~ ~ minecraft:cold_ocean run function animals:jellyfish
+execute as @e[type=squid,limit=1] at @s if biome ~ ~ ~ minecraft:deep_cold_ocean run function animals:jellyfish
+execute as @e[type=tropical_fish,limit=1] at @s if biome ~ ~ ~ minecraft:deep_lukewarm_ocean run function animals:shark
+execute as @e[type=salmon,limit=1] at @s if biome ~ ~ ~ minecraft:deep_cold_ocean run function animals:shark
+execute as @e[type=turtle,limit=1] at @s if biome ~ ~ ~ minecraft:beach run function animals:crab
+execute as @e[type=sheep,limit=1] at @s if biome ~ ~ ~ minecraft:savanna run function animals:ostrich

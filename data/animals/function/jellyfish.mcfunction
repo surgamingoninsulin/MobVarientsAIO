@@ -1,0 +1,3 @@
+execute as @s positioned ~ ~0.5 ~ run function jellyfish:_/create
+execute as @s positioned ~ ~0.5 ~ run summon drowned ~ ~ ~ {Tags:["jellyfish"],Silent:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,CustomName:"Jellyfish",active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:0b}],attributes:[{id:"minecraft:scale",base:1}]}
+execute as @s run kill @s

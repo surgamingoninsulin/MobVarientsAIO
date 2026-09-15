@@ -143,6 +143,48 @@ logic, or shared utility functions across many variant packs. If/when a
 future variant (tiger, etc.) needs that, add it as a separate dependency
 data pack rather than folding its internals into this one.
 
+### Wild Animals (display-entity puppet mobs)
+
+This pack also bundles a merged-in copy of a third-party **Wild Animals**
+data pack, added under its own top-level namespaces so it can't collide
+with anything in `mobvarientsaio:`:
+
+- `animals` — driver namespace: scoreboard objectives, the `load`/`main`
+  tick loop, and the random-spawn picker.
+- `elephant`, `elephant_head`, `elephant_body`, `elephant_leg`,
+  `elephant_leg_2`, `elephant_leg_3`, `elephant_leg_4` — elephant puppet
+  rig (a tagged `cow` driving a rig of `block_display`/`item_display`
+  parts through animation functions).
+- `crab`, `ostrich` — same puppet-rig technique on tagged `cow`s.
+- `jellyfish`, `shark` — same technique on tagged `drowned`s.
+
+Unlike the duck variant, this is **not** the vanilla `mob_variant` system —
+it's the older "ride a display-entity rig on top of a reskinned vanilla
+mob" technique, driven entirely by `.mcfunction` logic and vanilla
+`entity_data`/scoreboard commands. It ships no `assets/` of its own (all
+visuals are `block_display`/`item_display` block-model puppets, not entity
+textures), so nothing here was disabled — there was no separate asset
+layer to turn off. It hooks into `#minecraft:load` and `#minecraft:tick`
+(added at `data/minecraft/tags/function/load.json` /
+`tick.json`), which this pack didn't previously define, so the merge is a
+clean addition with no shared-file conflicts.
+
+### Animal Garden: Hippopotamus — not merged (incompatible format)
+
+A **Hippopotamus** mod (`animalgarden_hippopotamus`, by AquariusPlayz) was
+provided for inclusion, but it is a **Fabric/NeoForge mod jar** — a real
+new entity implemented in compiled Java (`.class` mixins, custom
+`Mob`/`Renderer`/goal classes under `aquariusplayz/animalgarden/hippopotamus/...`),
+not a data-driven mob variant or a data pack. Data packs and resource
+packs can't register new entity types or run JVM code, so there is no
+data-driven way to fold a real new mob like this into MobVarientsAIO —
+doing so would require installing the mod jar itself alongside the pack
+(as a Fabric/NeoForge mod, not a pack), which is a different distribution
+channel from everything else here. It was intentionally **not** copied
+into `assets/`/`data/` in this repo; if you want the hippo in-game, install
+`animalgarden-hippopotamus-*.jar` as a mod on a Fabric/NeoForge server
+alongside this pack instead.
+
 ## Notes / known limitations
 
 - **Art status:** Duck Egg and Duck Spawn Egg use their original custom

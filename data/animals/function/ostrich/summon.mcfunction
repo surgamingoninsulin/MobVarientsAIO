@@ -1,0 +1,2 @@
+execute as @s positioned ~ ~0.5 ~ run function ostrich:_/create
+execute as @s positioned ~ ~0.5 ~ run summon cow ~ ~ ~ {Tags:["ostrich"],Silent:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,CustomName:"Ostrich",active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:0b}],attributes:[{id:"minecraft:scale",base:1}]}

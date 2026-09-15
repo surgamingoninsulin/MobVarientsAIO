@@ -1,0 +1,2 @@
+execute as @s positioned ~ ~0.5 ~ run function shark:_/create
+execute as @s positioned ~ ~0.5 ~ run summon drowned ~ ~ ~ {Tags:["shark"],Silent:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,CustomName:"Shark",active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:0b}],Health:50f,attributes:[{id:"minecraft:scale",base:1},{id:"minecraft:max_health",base:50},{id:"minecraft:movement_efficiency",base:0.6},{id:"minecraft:movement_speed",base:0.6}]}
