@@ -1,13 +1,22 @@
 # MobVarientsAIO
 
 **MobVarientsAIO** ("Mob Varients All-In-One") is a combined data pack + resource
-pack for Minecraft **26.2+** that adds new visual/behavioral variants of vanilla
+pack for Minecraft **26.0+** that adds new visual/behavioral variants of vanilla
 mobs on top of the game's native mob-variant system (the same system used for
 vanilla chicken variants, cow variants, etc.), without spawning any new custom
 entities.
 
 - **Author:** SurGamingOnInsulin
-- **Target version:** Minecraft 26.2+ (`pack_format` 88–107)
+- **Target version:** Minecraft **26.0+** (`pack_format` 88–107)
+
+> **Version note:** Minecraft moved from the old `1.xx.xx` versioning scheme
+> to a new `YY.release` scheme starting with **26.0**. This pack targets
+> that new **26.x** line specifically — do not confuse `26.0`/`26.1`/`26.2`
+> with the old-style `1.21.11`/`1.21.x` numbering; they are different
+> versioning eras with different `pack_format` ranges. Everything in this
+> pack (data component syntax, `chicken/variant`, `select`-model item
+> overrides, component-matching recipe ingredients) is written against the
+> 26.x data-driven format, not the legacy 1.21.x one.
 
 Load it as a combined pack (it ships both `assets/` and `data/`, so drop the
 whole folder into your world's `datapacks/` folder, or zip it and use it as
@@ -106,7 +115,8 @@ data pack rather than folding its internals into this one.
   before release.
 - The furnace/smoker/campfire recipes rely on component-aware ingredient
   matching (matching `minecraft:chicken` items by their
-  `custom_model_data`). If a specific 26.x build you're targeting doesn't
+  `custom_model_data`). If a specific 26.x build you're targeting (26.0 and
+  up, not the old 1.21.x line) doesn't
   support component predicates on cooking ingredients, those three recipe
   files are the only thing to revisit — everything else (variant
   definition, egg laying, death drops) uses well-established
